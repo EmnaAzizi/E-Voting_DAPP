@@ -1,0 +1,27 @@
+<!-- header 
+   ================================================== -->
+   <header>
+
+    <div class="row">
+
+        <div class="logo">
+          <a routerLink="/accueil"></a>
+       </div>
+
+        <nav id="main-nav-wrap">
+             <ul class="main-navigation">
+                 <li class="current"><a class="smoothscroll"  routerLink="/accueil" title="">Accueil</a></li>
+                 <li><a class="smoothscroll"  (click)="check2()" title="">Voter</a></li>
+                 <li><a class="smoothscroll"  (click)="check()" title="">Résultats</a></li>
+                 <li><a class="smoothscroll" routerLink="/verification" title="">Vérification</a></li>
+            
+                 <li><a class="smoothscroll"  routerLink="/about"  title="">A propos</a></li>					
+                 				
+             </ul>
+         </nav>
+
+         <a class="menu-toggle" href="#"><span>Menu</span></a>
+        
+    </div>   	
+    
+</header> <!-- /header -->

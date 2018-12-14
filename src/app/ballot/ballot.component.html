@@ -1,0 +1,69 @@
+
+  
+<div class="limiter">
+  <div class="container-table100">
+      
+    <div class="wrap-table100" style="margin-top:100px;">
+      <form>
+        
+          <div class="col-twelve"><h1 style="color:#0073B7;margin-left:35%;">Votre Bulletin</h1></div>
+        <br><br>
+          <br>
+        <div class="table">
+        
+          <div class="row header">
+            <div class="cell">
+              Numéro
+            </div>
+            <div class="cell">
+              Candidat
+            </div>
+            <div class="cell">
+              Choix
+            </div>
+            <div class="cell">
+              Contre-valeur
+            </div>
+          </div>
+
+
+         
+         
+
+         
+           
+          <div class="row roww" *ngFor= 'let candidat of candidats ' >
+            <div class="cell" data-title="Full Name">
+              {{candidat.cj}}
+            </div>
+            <div class="cell" data-title="Age">
+                {{candidat.nom}}
+            </div>
+            <div class="cell" data-title="Job Title">
+                <input type="radio" name="radAnswer" (change)="SelectedCandidate(candidat.nom,candidat.cj)">
+            </div>
+            <div class="cell" data-title="Location">
+              {{candidat.cvj}}
+            </div>
+          
+
+        </div>
+        </div>
+
+        <p style="margin-top:20px;margin-bottom:20px;">*La contre-valeur est une valeur à mémoriser afin de vérifier ultérieurement aux résultats que votre vote a été bien pris en compte.</p>
+        
+        <div class="container-contact100-form-btn">
+
+            <button class="contact100-form-btn"  (click)="vote()" >
+              <span>
+                <i class="fa fa-paper-plane-o m-r-6" aria-hidden="true"></i>
+                Soumettre
+              </span>
+            </button>
+          </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+

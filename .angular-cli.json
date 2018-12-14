@@ -19,9 +19,23 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "assets/css/base.css",
+        "assets/css/main.css",
+        "assets/css/vendor.css"
+       
       ],
-      "scripts": [],
+      "scripts": [
+        
+        "assets/js/modernizr.js",
+        "assets/js/jquery-1.11.3.min.js",
+        "assets/js/jquery-migrate-1.2.1.min.js",
+        "assets/js/plugins.js",
+        "assets/js/main.js"
+        
+      
+        
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
